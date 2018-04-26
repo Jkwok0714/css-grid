@@ -18,7 +18,7 @@
     <div class="item item6">6</div>
     <div class="item item7">7</div>
     <div class="item item8">8</div>
-    <div class="item item8">💩</div>
+    <div class="item poop">💩</div>
     <div class="item item9">9</div>
     <div class="item item10">10</div>
     <div class="item item11">11</div>
@@ -27,6 +27,7 @@
     <div class="item item14">14</div>
     <div class="item item15">15</div>
     <div class="item item16">16</div>
+    <div class="item skull">💀</div>
     <div class="item item17">17</div>
     <div class="item item18">18</div>
     <div class="item item19">19</div>
@@ -48,6 +49,24 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(5, 1fr);
+    }
+
+    .item8 {
+      grid-column: span 3;
+    }
+
+    .poop {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      background: #BADA55;
+    }
+
+    .item10 {
+      grid-column: 1 / -1;
+    }
+
+    .skull {
+      grid-column: 2/5;
     }
   </style>
 </body>
