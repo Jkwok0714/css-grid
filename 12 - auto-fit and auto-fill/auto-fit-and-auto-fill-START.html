@@ -36,7 +36,16 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      border: 10px solid var(--yellow);
+      border: 5px solid var(--yellow);
+
+      /* //auto-fill is howevery many columns can fit */
+      grid-template-columns: repeat(auto-fill, 100px);
+
+      /* //auto-fit will end the grid where the content ends */
+    }
+
+    .item20 {
+      grid-column-end: -1;
     }
   </style>
 </body>
