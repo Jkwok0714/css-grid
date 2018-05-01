@@ -70,7 +70,28 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(5, 100px);
+
+      border: 3px solid var(--yellow);
+
+      /* justify-items: center;
+      align-items: center; */
+      place-items: stretch stretch;
+
+      justify-content: space-between;
+    }
+
+    .itm {
+      text-align: center;
+      /* align-content: : center; */
+      border-radius: 4px;
+      background: white;
+    }
+
+    .itm9 {
+      justify-self: center;
+      align-self: center;
     }
   </style>
 </body>
